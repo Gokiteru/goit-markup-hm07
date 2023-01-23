@@ -174,8 +174,10 @@ line-height: 1.2;
 color: var(--color-navy-blue);
 }
 
-.project-tag{
+.project-card{
 font-size: 16px;
 line-height: 1.5;
 color: var(--color-slate);
+background: #FFFFFF;
+border: 1px solid var(--color-cornflower);
 }
