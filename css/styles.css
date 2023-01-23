@@ -1,0 +1,181 @@
+:root{
+    --color-iris: #4D5AE5;
+    --color-ocean: #404BBF;
+    --color-navy-blue: #2E2F42;
+    --color-green: #31D0AA;
+    --color-slate: #434455;
+    --color-light-slate: #8E8F99;
+    --color-cornflower: #E7E9FC;
+    --color-cloud: #F4F4FD;
+    --color-navy-blue-modal: #2E2F42;
+    --color-grey: #2E2F42;
+}
+
+body{
+background: #FFFFFF;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.logo{
+font-family: 'Raleway';
+font-style: normal;
+
+font-weight: 800;
+font-size: 18px;
+line-height: 1.33;
+
+text-transform: uppercase;
+text-decoration: none;
+color: var(--color-iris);
+}
+
+.logo-studio{
+color: var(--color-grey);
+}
+
+.navigation{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+text-decoration: none;
+color: var(--color-navy-blue);
+}
+
+.navigation:hover,.navigation:active,.navigation:focus{
+    color:var(--color-ocean);
+    text-decoration: underline;
+}
+
+.contacts{
+font-style: normal;
+font-size: 16px;
+line-height: 1.5;
+text-decoration: none;
+color: var(--color-slate);
+}
+
+.contacts:hover,.contacts:active,.contacts:focus{
+color:var(--color-ocean);
+text-decoration: underline;
+}
+
+.order-service{
+background-color: var(--color-navy-blue);
+font-weight: 700;
+font-size: 56px;
+line-height: 1.07;
+color: #FFFFFF;
+}
+
+.order-service-button{
+background-color: var(--color-iris);
+cursor: pointer;
+color: #FFFFFF;
+
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+}
+
+.order-service-button:hover,.order-service-button:focus,.order-service-button:active{
+background-color: var(--color-ocean);
+}
+
+.features{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.5;
+color: var(--color-slate);
+}
+
+.features-header{
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+color: var(--color-navy-blue);
+}
+
+.about-us{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.11;
+color: var(--color-navy-blue);
+}
+
+.about-us-image{
+width: 360px;
+height: 300px;
+}
+
+.team{
+background-color: var(--color-cloud);
+font-size: 16px;
+line-height: 1.5;
+color: var(--color-slate);
+}
+
+.team-header{
+font-weight: 700;
+font-size: 36px;
+line-height: 1,11;
+}
+
+.team-card{
+background-color: #FFFFFF;
+}
+
+.member-name{
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+color: var(--color-navy-blue);
+}
+
+.footer{
+font-size: 16px;
+line-height: 1.5;
+background-color: var(--color-navy-blue);
+color: var(--color-cornflower);
+}
+
+.footer-logo-studio{
+    color: var(--color-cloud);
+}
+
+/* PORTFOLIO STYLES */
+
+.filter-button{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+
+cursor: pointer;
+background-color: var(--color-cloud);
+color: var(--color-iris);
+
+border: 1px solid var(--color-cornflower);
+border-radius: 4px;
+}
+
+.filter-button:hover, .filter-button:focus, .filter-button:active{
+color: #FFFFFF;
+background-color: var(--color-ocean);
+}
+
+.portfolio-image{
+width: 360px;
+height: 300px;
+}
+
+.project-name{
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+color: var(--color-navy-blue);
+}
+
+.project-tag{
+font-size: 16px;
+line-height: 1.5;
+color: var(--color-slate);
+}
