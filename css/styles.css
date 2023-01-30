@@ -12,10 +12,52 @@
     --color-white: #FFFFFF;
 }
 
+p{
+    margin: 0px 0px;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+.container{
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+
+.header{
+    display: inline-flex;
+    padding: 24px 141px;
+    border-bottom: 1px solid #E7E9FC;
+}
+
+.inline{
+    display: inline-flex;
+}
+
+.section{
+    padding: 120px 141px;
+}
+.section:nth-child(3){
+    padding: 120px 141px 60px 141px;
+
+}
+.section:nth-child(4){
+    padding: 60px 141px 120px 141px;
+}
+
 body{
 background: var(--color-white);
 font-family: 'Roboto', sans-serif;
 color: var(--color-slate);
+width: 1440px;
 }
 
 .logo{
@@ -35,6 +77,9 @@ color: var(--color-grey);
 
 .list{
     list-style-type: none;
+    display: inline-flex;
+    margin: 0px 0px;
+    padding: 0px 0px;
 }
 
 .navigation{
@@ -44,6 +89,14 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 text-decoration: none;
 color: var(--color-navy-blue);
+}
+
+.navigation-list{
+    margin-left: 40px;
+}
+
+.navigation-list:first-child{
+    margin-left: 76px;
 }
 
 .navigation:hover,.navigation:active,.navigation:focus{
@@ -59,6 +112,15 @@ color: var(--color-slate);
 letter-spacing: 0.02em;
 }
 
+.contacts-list{
+    margin-left: 40px;
+}
+
+.contacts-list:first-child{
+    margin-left: 329px;
+}
+
+
 .contacts:hover,.contacts:active,.contacts:focus{
 color:var(--color-ocean);
 }
@@ -67,12 +129,17 @@ color:var(--color-ocean);
 background-color: var(--color-navy-blue);
 }
 
+.order-container{
+    padding: 68px 332px;
+}
+
 .order-service-logo{
 color: var(--color-white);
 line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
 font-size: 50px;
+margin-bottom: 48px;
 }
 
 .order-service-button{
@@ -85,6 +152,10 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
+
+margin-left: 163px;
+padding: 16px 32px;
+gap: 10px;
 }
 
 .order-service-button:hover,.order-service-button:focus,.order-service-button:active{
@@ -97,12 +168,23 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 }
 
+.features-list{
+    margin-left: 24px;
+}
+
+.features-list:first-child{
+    margin-left: 0px;
+}
+
 .features-header{
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 color: var(--color-navy-blue);
 letter-spacing: 0.02em;
+
+margin-top: 0px;
+margin-bottom: 8px;
 }
 
 .about-us{
@@ -111,11 +193,17 @@ line-height: 1.11;
 color: var(--color-navy-blue);
 text-align: center;
 letter-spacing: 0.02em;
+margin-bottom: 72px;
 }
 
 .about-us-image{
 width: 360px;
 height: 300px;
+margin-left: 24px;
+}
+
+.about-us-image:first-child{
+margin-left: 0px;
 }
 
 .team{
@@ -130,10 +218,19 @@ font-weight: 700;
 font-size: 36px;
 line-height: 1.11;
 text-align: center;
+margin-bottom: 72px;
+}
+
+.team-card:first-child{
+    background-color: var(--color-white);
+    text-align: center;
+    margin-left: 0px;
 }
 
 .team-card{
 background-color: var(--color-white);
+text-align: center;
+margin-left: 24px;
 }
 
 .member-name{
@@ -143,12 +240,21 @@ line-height: 1.2;
 color: var(--color-navy-blue);
 }
 
+.member-position{
+    margin-bottom: 32px;
+}
+
 .footer{
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
 background-color: var(--color-navy-blue);
 color: var(--color-cornflower);
+padding: 100px 156px;
+}
+
+.footer-text{
+    margin: 16px 864px 0px 0px;
 }
 
 .footer-logo-studio{
@@ -170,6 +276,15 @@ color: var(--color-iris);
 
 border: 1px solid var(--color-cornflower);
 border-radius: 4px;
+padding: 12px 24px;
+}
+
+.button-li{
+margin-left: 24px;
+}
+
+.button-li:first-child{
+margin-left: 0px;
 }
 
 .filter-button:hover, .filter-button:focus, .filter-button:active{
@@ -187,10 +302,45 @@ font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
 color: var(--color-navy-blue);
+margin: 0px 0px 8px 0px;
 }
 
 .project-card{
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.02em;
+margin-left: 21px;
+margin-bottom: 48px;
+height: 420px;
+border: 1px solid #E7E9FC;
+}
+
+.project-card:nth-child(3n+1)
+{
+    margin-left: 0px;
+}
+
+.project-card:nth-child(n+7)
+{
+margin-bottom: 0px;
+}
+
+.portfolio-list{
+list-style-type: none;
+display: inline-flex;
+margin: 0px 0px;
+padding: 0px 0px;
+flex-wrap: wrap;
+}
+
+.portfolio-section{
+padding: 96px 141px 120px 141px;
+}
+
+.filter-list{
+margin: 0px 265px 72px 265px;
+}
+
+.project-card-text{
+padding: 32px 16px;
 }
