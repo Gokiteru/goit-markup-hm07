@@ -325,8 +325,6 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 margin-left: 24px;
 margin-bottom: 48px;
-/* Не выходит рассчитать 360px*/
-/* flex-basis: calc((100%-2*24)/3); */
 }
 
 .project-card:nth-child(3n+1)
