@@ -17,6 +17,12 @@ p,h1,h2,h3,h4,h5,h6,ul,li{
     padding: 0px 0px;
 }
 
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 html{
     box-sizing: border-box;
 }
@@ -70,7 +76,7 @@ color: var(--color-grey);
 
 .list{
     list-style-type: none;
-    display: inline-flex;
+    display: flex;
     justify-content: center;
 }
 
@@ -127,7 +133,7 @@ color:var(--color-ocean);
 
 .order-service{
 background-color: var(--color-navy-blue);
-padding: 188px 188px;
+padding: 188px 0px;
 }
 
 .order-service-logo{
@@ -170,7 +176,7 @@ padding-bottom: 0;
 
 .features-list{
     margin-left: 24px;
-    flex-basis: 264px;
+    flex-basis: calc((100%-3*24)/4);
 }
 
 .features-list:first-child{
@@ -237,7 +243,7 @@ margin-left: 24px;
 .bottom-card{
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
-padding: 16px 32px;
+padding: 16px 0px;
 }
 
 .member-name{
@@ -254,7 +260,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 background-color: var(--color-navy-blue);
 color: var(--color-cornflower);
-padding: 100px 156px;
+padding: 100px 0px;
 }
 
 .footer-text{
@@ -281,6 +287,10 @@ color: var(--color-iris);
 border: 1px solid var(--color-cornflower);
 border-radius: 4px;
 padding: 12px 24px;
+}
+
+.filter-list{
+margin-bottom: 72px;
 }
 
 .button-li{
@@ -315,7 +325,8 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 margin-left: 24px;
 margin-bottom: 48px;
-flex-basis: 360px;
+/* Не выходит рассчитать 360px*/
+/* flex-basis: calc((100%-2*24)/3); */
 }
 
 .project-card:nth-child(3n+1)
@@ -338,10 +349,6 @@ flex-wrap: wrap;
 
 .portfolio-section{
 padding: 96px 0px 120px 0px;
-}
-
-.filter-list{
-margin: 0px 265px 72px 265px;
 }
 
 .project-card-text{
