@@ -13,8 +13,8 @@
 }
 
 p,h1,h2,h3,h4,h5,h6,ul,li{
-    margin: 0px 0px;
-    padding: 0px 0px;
+    margin: 0;
+    padding: 0;
 }
 
 img{
@@ -175,12 +175,12 @@ padding-bottom: 0;
 }
 
 .features-list{
-    margin-left: 24px;
-    flex-basis: calc((100%-3*24)/4);
+margin-left: 24px;
+flex-basis: calc((100%-3*24px)/4);
 }
 
 .features-list:first-child{
-    margin-left: 0px;
+margin-left: 0px;
 }
 
 .features-header{
@@ -243,7 +243,7 @@ margin-left: 24px;
 .bottom-card{
 box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 border-radius: 0px 0px 4px 4px;
-padding: 16px 0px;
+padding: 32px 0px;
 }
 
 .member-name{
@@ -325,6 +325,7 @@ line-height: 1.5;
 letter-spacing: 0.02em;
 margin-left: 24px;
 margin-bottom: 48px;
+flex-basis: calc((100% - 2*24px)/3);
 }
 
 .project-card:nth-child(3n+1)
