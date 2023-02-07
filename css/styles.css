@@ -152,7 +152,7 @@ body {
     ),
     url(../images/background-images/hero-background.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
 }
 
