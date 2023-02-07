@@ -493,7 +493,7 @@ body {
   text-decoration: none;
 }
 
-.project-card-link:hover .card{
+.project-card-link:hover .card, .project-card-link:focus .card{
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
