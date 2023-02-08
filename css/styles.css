@@ -142,9 +142,9 @@ body {
   color: var(--color-ocean);
 }
 
-.order-service {
-  background-color: var(--color-navy-blue);
+.order-container{
   padding: 188px 0px;
+  width: 1440px;
   background-image: linear-gradient(
       to right,
       rgba(46, 47, 66, 0.7),
@@ -154,6 +154,12 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+}
+
+.order-service {
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .order-service-logo {
@@ -207,6 +213,9 @@ body {
   padding-top: 24px;
   padding-bottom: 24px;
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .features-list:first-child {
@@ -295,7 +304,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 24px;
 }
 
 .socials-icon {
@@ -491,10 +500,11 @@ body {
 
 .project-card-link{
   text-decoration: none;
+  display: block;
 }
 
-.project-card-link:hover .card, .project-card-link:focus .card{
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+.project-card-link:hover, .project-card-link:focus{
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-card:nth-child(3n + 1) {
