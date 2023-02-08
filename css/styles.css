@@ -142,24 +142,17 @@ body {
   color: var(--color-ocean);
 }
 
-.order-container{
+.order-section{
   padding: 188px 0px;
-  width: 1440px;
+  max-width: 1440px;
   background-image: linear-gradient(
       to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/background-images/hero-background.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
-}
-
-.order-service {
-display: flex;
-justify-content: center;
-align-items: center;
+  margin: 0 auto;
 }
 
 .order-service-logo {
@@ -210,8 +203,7 @@ align-items: center;
 .features-icon {
   background: #f4f4fd;
   border-radius: 4px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+height: 112px;
   margin-bottom: 8px;
   display: flex;
   align-items: center;
