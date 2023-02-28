@@ -1272,6 +1272,7 @@ transition: background-color var(--trns-fast), box-shadow var(--trns-fast);
 
 .menu-container {
   position: fixed;
+  opacity: 0;
   top: 0;
   left: 0;
   width: 100vw;
@@ -1281,11 +1282,12 @@ transition: background-color var(--trns-fast), box-shadow var(--trns-fast);
   z-index: 999;
 
   transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, opacity 250ms ease-in-out;
 }
 
 .menu-container.is-open {
   transform: translateX(0);
+  opacity: 1;
 }
 
 .mobile-button{
